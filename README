@@ -1,0 +1,25 @@
+ID: 322944869 
+CREATED BY: Yahya Saad
+EX3 – HTTP server using threadpool
+==Files==
+threadpool.c
+The pool is implemented by a queue. When the server gets a connection (getting back from
+accept() in server.c), threadpool also contains all the function needed to make more than one thread to do the work 
+
+
+server.c
+This file implement a HTTP server - this server constructs an HTTP response based on client's request and sends the response to the client. 
+
+README.txt 
+This file; more info about the http server and how does it work.
+==How to Compile this program==
+gcc threadpool.c server.c  -o server -lpthread
+server is the executable program.
+==How to run this program==
+./server   <port> <pool-size> <max-number-of-request>  
+==General information== 
+-Write localhost:<port-number> in order to check result in the browser: This will bring you to the root directory of the server(showed in table) or if index.html is found - it will open it. 
+-Check status code response by opening another termenal and write "telnet localhost<port-number>" then GET request with 3 tokens 
+any other pass can be filled in after <port-number> and "/".
+The server can handle with files with spaces, and traverse through the folders tree.
+
