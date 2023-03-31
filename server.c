@@ -1,5 +1,5 @@
-//Ex3: server.c file
-//Name: Yahya Saad, ID: 322944869
+//server.c file
+//Name: Yahya Saad
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
