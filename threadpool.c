@@ -1,5 +1,5 @@
-//Ex3: threadpool.c file
-//Name: Yahya Saad, ID: 322944869
+//threadpool.c file
+//Name: Yahya Saad
 #include "threadpool.h"
 #include <stdlib.h>
 #include <stdio.h>
